@@ -513,7 +513,7 @@ local Menu = loadstring(game:HttpGet("https://gist.githubusercontent.com/ItzCraz
 	end
 
 	local Farming = Menu.Container('Main', 'Job Farm', 'Right'); do -- Job Farm
-		Menu.ComboBox('Main', 'Job Farm', 'Job Type', flags.jobtype, {'Clean Floors', 'Crate'}, function(self)
+		Menu.ComboBox('Main', 'Job Farm', 'Job Type', flags.jobtype, {'Clean Floors', 'Delivery'}, function(self)
 			flags.jobtype = self
 		end)
 
