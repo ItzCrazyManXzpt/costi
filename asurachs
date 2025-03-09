@@ -539,7 +539,7 @@ local Menu = loadstring(game:HttpGet("https://gist.githubusercontent.com/ItzCraz
 					if (char and root) then 
 						if (flags.autodeposit and client.PlayerGui.Main.HUD.Cash.Text:find('500,000')) then
 							moveto(bankpart.Position, flags.tween_speed, -10, -10)
-							replicatedstorage:FindFirstChild("Events"):FindFirstChild("Bank"):FireServer("Deposit", "500000")
+							replicatedstorage:FindFirstChild("Events"):FindFirstChild("Bank"):FireServer("Deposit", "450000")
 						end
 
 						autowithdraw()
