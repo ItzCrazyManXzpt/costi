@@ -699,7 +699,7 @@ local Menu = loadstring(game:HttpGet("https://gist.githubusercontent.com/ItzCraz
 							end
 							
 						elseif (billboard) then
-							moveto(CFrame.new(billboard.Adornee.Position), flags.tween_speed, -8, -3.7)
+							moveto(CFrame.new(billboard.Adornee.Position), flags.tween_speed, -8, -4)
 						
 							local char = client.Character 
 							local root = char and char:FindFirstChild('HumanoidRootPart')
