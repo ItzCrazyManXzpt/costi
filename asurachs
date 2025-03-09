@@ -48,7 +48,7 @@ local flags = {
 	farm_method = 'Tween',
 	jobtype = 'Clean Floors',
 	farm_location = 'Gym',
-	roadworktype = 'Speed',
+	roadworktype = 'Stamina',
 	punchingtype = 'Strike Power Training',
 	foodtype = 'Chicken',
 	calisthenictype = 'Push Up',
@@ -695,11 +695,11 @@ local Menu = loadstring(game:HttpGet("https://gist.githubusercontent.com/ItzCraz
 								end
 
 							else
-								moveto(CFrame.new(road_type.Part.Position), flags.tween_speed, -10, -10)
+								moveto(CFrame.new(road_type.Part.Position), flags.tween_speed, -8, -8)
 							end
 							
 						elseif (billboard) then
-							moveto(CFrame.new(billboard.Adornee.Position), flags.tween_speed, -10, -6)
+							moveto(CFrame.new(billboard.Adornee.Position), flags.tween_speed, -8, -3.5)
 						
 							local char = client.Character 
 							local root = char and char:FindFirstChild('HumanoidRootPart')
