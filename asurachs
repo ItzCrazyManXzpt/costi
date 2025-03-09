@@ -537,9 +537,9 @@ local Menu = loadstring(game:HttpGet("https://gist.githubusercontent.com/ItzCraz
 					local hum = char and char:FindFirstChild('Humanoid')
 
 					if (char and root) then 
-						if (flags.autodeposit and client.PlayerGui.Main.HUD.Cash.Text:find('250,000')) then
+						if (flags.autodeposit and client.PlayerGui.Main.HUD.Cash.Text:find('500,000')) then
 							moveto(bankpart.Position, flags.tween_speed, -10, -10)
-							replicatedstorage:FindFirstChild("Events"):FindFirstChild("Bank"):FireServer("Deposit", "250000")
+							replicatedstorage:FindFirstChild("Events"):FindFirstChild("Bank"):FireServer("Deposit", "500000")
 						end
 
 						autowithdraw()
@@ -1148,7 +1148,7 @@ local Menu = loadstring(game:HttpGet("https://gist.githubusercontent.com/ItzCraz
 	end)
 	
 	userinputservice.InputBegan:Connect(function(input)
-		if input.KeyCode == Enum.KeyCode['M'] then
+		if input.KeyCode == Enum.KeyCode['L'] then
 			MenuVis = not MenuVis
 			
 			Menu:SetVisible(MenuVis)
